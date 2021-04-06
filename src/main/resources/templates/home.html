@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://getbootstrap.com/docs/4.0/examples/jumbotron/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="\netbeans.png">
+
+    <title>NetbeansxSpring - Home</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">NetbeansXSpring</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register">Register</a>
+          </li>
+        </ul>
+           <a class="btn btn-outline-success" href="/login" role="button">Login</a>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <br>
+      <div class="jumbotron">
+        <div class="container">
+            
+           <img class="mb-1" src="\netbeans.png" width="100" height="100">x<img class="mb-1" src="\springshort.png" width="100" height="100" >
+
+          <h1 class="display-3">NetbeansXSpring</h1>
+          <p>NetbeansxSpring its combined in one ecosystem of NetbeansxSpring with full supported functionality and powerful user interface.
+              This is page showing contributors and users of NetbeansxSpring.</p>
+          <p><a class="btn btn-primary btn-lg" href="/go" role="button">Download »</a></p>
+          <p>Last version: 1.0.40, build:4000, release</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row"> 
+            
+          <div class="col-md-4" th:each="user : ${users}">
+             <img src="/springshort.png" alt="" width="75" height="75" class="img-circle img-responsive">
+            <h2 th:text="${user.getName()}"></h2>
+            <p th:text="${user.getDescription()}"> </p>
+            <p><a class="btn btn-secondary" th:href="@{/users/{id}(id=${user.getId()})}" role="button">View details »</a></p>
+          </div>
+         
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>© NetbeansXSpring 2021(/or NetbeansxSpring 21)</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/bootstrap.min.js"></script>
+  
+
+<div at-magnifier-wrapper=""><div class="at-theme-light"><div class="at-base notranslate" translate="no"><div class="Z1-AJ" style="top: 0px; left: 0px;"></div></div></div></div></body></html>
